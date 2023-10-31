@@ -20,14 +20,14 @@ line-ver-color=fe8019
 ring-ver-color=fe8019
 inside-ver-color=282828
 text-ver-color=ebdbb2
-ring-wrong-color=8ec07c
-text-wrong-color=8ec07c
+ring-wrong-color=cc241d
+text-wrong-color=cc241a
+line-wrong-color=282828
 inside-wrong-color=282828
 inside-clear-color=282828
 text-clear-color=ebdbb2
 ring-clear-color=458588
 line-clear-color=282828
-line-wrong-color=282828
 bs-hl-color=8ec07c
 grace=2
 grace-no-mouse
