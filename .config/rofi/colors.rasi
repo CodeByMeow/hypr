@@ -1,0 +1,14 @@
+
+/**
+ * Colors
+ **/
+
+* {
+/* Gruvbox Dark Color Scheme Equivalents */
+background:     #282828; /* Background */
+background-alt: #3c3836; /* Background Alternate */
+foreground:     #ebdbb2; /* Foreground */
+selected:       #458588; /* Selection */
+active:         #83a598; /* Active */
+urgent:         #d79921; /* Closest match for Urgent */
+}
