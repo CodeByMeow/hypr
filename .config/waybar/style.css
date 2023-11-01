@@ -48,10 +48,8 @@ window#waybar.hidden {
   background-color: #3c3836;
   border-radius: 8px;
   font-size: 18.5px;
-
   margin-left: 4px;
   margin-right: 4px;
-
   margin-top: 8.5px;
   margin-bottom: 8.5px;
 }
@@ -109,6 +107,7 @@ window#waybar.hidden {
 #backlight,
 #battery,
 #pulseaudio,
+#custom-pacman,
 #network {
   background-color: #3c3836;
   font-size: 20px;
@@ -175,11 +174,25 @@ window#waybar.hidden {
   padding-right: 10px;
 }
 
-@keyframes blink {
-  to {
-    background-color: rgba(28, 28, 28, 0.5);
-    color: #abb2bf;
-  }
+@keyframes blink-update {
+	to {
+    background-color: #8ec07c;
+	}
+}
+
+#custom-pacman {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    padding-right: 8px;
+    padding-left: 0;
+}
+#custom-pacman.updated {
+    color: #8ec07c
+}
+#custom-pacman.pending-updates {
+	animation-name: blink-update;
+	animation-duration: 3s;
 }
 
 #battery.warning {
@@ -230,7 +243,7 @@ label:focus {
   background-color: #3c3836;
 }
 
-#tray {
+#tray{
   margin-right: 8px;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -295,3 +308,4 @@ label:focus {
 #custom-weather.default {
   color: #dbd9d8;
 }
+
