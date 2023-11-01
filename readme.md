@@ -8,5 +8,5 @@ yay -S --noconfirm foot hyprland-git hyprshot hyprpicker \
     bluez bluez-utils blueman nwg-look-bin xfce4-settings \
     bettergruvbox-gtk-theme reversal-icon-theme-git bibata-cursor-theme xdg-desktop-portal-hyprland \
     xclip nodejs npm ripgrep neovim tree-sitter-cli tmux yazi \
-    xdg-user-dir wl-clipboard ly 
+    xdg-user-dir wl-clipboard ly networkmanager rofi
 ```

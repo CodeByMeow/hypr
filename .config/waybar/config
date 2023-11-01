@@ -1,8 +1,8 @@
 {
     "height": 55, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
-    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
-    "modules-right": ["tray", "network", "pulseaudio",  "backlight", "battery", "custom/lock", "clock", "custom/power-menu"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather", "cava"],
+    "modules-right": ["tray", "network", "backlight", "battery","pulseaudio", "custom/lock", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
@@ -41,7 +41,6 @@
 
     },
     "network": {
-        /* "format-wifi": "直", */
         "format-wifi": "{icon}",
         "format-ethernet": " ",
         "format-disconnected": "睊",
@@ -89,5 +88,26 @@
     "custom/power-menu": {
         "format": " ⏻ ",
         "on-click": "wlogout",
+    },
+    "cava": {
+        "framerate": 30,
+        "autosens": 1,
+        "sensitivity": 100,
+        "bars": 14,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
     },
 }
