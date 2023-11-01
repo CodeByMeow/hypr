@@ -22,6 +22,7 @@ yay -S --noconfirm foot nushell hyprland hyprshot hyprpicker \
     xdg-user-dirs wl-clipboard ly networkmanager rofi tumbler youtube-music-bin firefox
 
     # Noto fonts
+    echo -e "Install Noto font..."
     sudo pacman -S --noconfirm $(pacman -Ssq noto-fonts)
 
     echo -e "Reload font...\n"
@@ -53,7 +54,6 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
     
     # Set some files as exacutable 
     chmod +x ~/.config/hypr/xdg-portal-hyprland
-    chmod +x ~/.config/waybar/scripts/weather.py
     chmod +x ~/.config/waybar/scripts/network/rofi-network-manager.sh
 fi
 
