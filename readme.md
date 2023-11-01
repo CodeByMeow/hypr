@@ -1,7 +1,7 @@
 ### Dependencies
 ``` 
 yay -S --noconfirm foot hyprland-git hyprshot hyprpicker \
-    swaybg swaylock-effects wofi wlogout mako waybar-hyprland \
+    swaybg swaylock-effects wofi wlogout mako waybar-hyprland wireplumber \
     ttf-jetbrains-mono-nerd ttf-victor-mono-nerd \
     polkit-gnome python-requests starship \
     swappy slurp pamixer brightnessctl gvfs \
