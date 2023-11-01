@@ -25,6 +25,7 @@ yay -S --noconfirm foot nushell hyprland hyprshot hyprpicker \
     sudo pacman -S --noconfirm $(pacman -Ssq noto-fonts)
 
     echo -e "Reload font...\n"
+    cp -R .fonts ~
     fc-cache -fv
 
     # Start the bluetooth service
