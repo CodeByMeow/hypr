@@ -329,6 +329,8 @@ return {
                 javascriptreact = { { "prettierd", "prettier" } },
                 typescript = { { "prettierd", "prettier" } },
                 typescriptreact = { { "prettierd", "prettier" } },
+                css = { { "prettierd", "prettier" } },
+                html = { { "prettierd", "prettier" } },
                 sh = { "beautysh" },
                 ["*"] = { "codespell" },
             },

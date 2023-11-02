@@ -11,7 +11,7 @@ fi
 ### Install all of the above pacakges ####
 read -n1 -rep 'Would you like to install the packages? (y,n)' INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
-yay -S --noconfirm foot nushell hyprland hyprshot hyprpicker \
+yay -S --noconfirm foot nushell hyprland hyprshot hyprpicker hyprland-per-window-layout \
     swaybg swaylock-effects wofi wlogout mako waybar-hyprland waybar-updates wireplumber \
     ttf-jetbrains-mono-nerd ttf-victor-mono-nerd \
     polkit-gnome python-requests starship \
@@ -19,7 +19,8 @@ yay -S --noconfirm foot nushell hyprland hyprshot hyprpicker \
     bluez bluez-utils blueman nwg-look-bin xfce4-settings \
     bettergruvbox-gtk-theme reversal-icon-theme-git bibata-cursor-theme xdg-desktop-portal-hyprland \
     xclip nodejs npm ripgrep neovim tree-sitter-cli tmux yazi \
-    xdg-user-dirs wl-clipboard ly networkmanager rofi tumbler youtube-music-bin firefox
+    xdg-user-dirs wl-clipboard ly networkmanager rofi tumbler youtube-music-bin firefox \
+    ttf-all-the-icons udiskie
 
     # Noto fonts
     echo -e "Install Noto font..."

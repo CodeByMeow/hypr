@@ -1,16 +1,3 @@
-
-/*****----- Configuration -----*****/
-configuration {
-	modi:                       "drun,run,filebrowser,window";
-    show-icons:                 false;
-    display-drun:               " ";
-    display-run:                " ";
-    display-filebrowser:        " ";
-    display-window:             " ";
-	drun-display-format:        "{name}";
-	window-format:              "{w} · {c} · {t}";
-}
-
 /*****----- Global Properties -----*****/
 @import                          "~/.config/rofi/colors.rasi"
 @import                          "~/.config/rofi/fonts.rasi"

@@ -1,8 +1,8 @@
 {
     "height": 55, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
-    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces"],
-    "modules-right": ["tray", "network", "custom/pacman", "backlight", "battery", "pulseaudio", "clock", "custom/power-menu"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
+    "modules-right": ["custom/pacman", "tray", "network",  "backlight", "battery", "pulseaudio", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
@@ -88,6 +88,13 @@
         "updated": ""
       },
       "exec-if": "which waybar-updates",
-      "exec": "waybar-updates"
-    }
+      "exec": "waybar-updates &"
+    },
+    "custom/weather": {
+        "format": "{}°",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "wttrbar --ampm --location Ho_Chi_Minh --date-format \"%d/%m\" --hide-conditions &",
+        "return-type": "json"
+    },
 }
